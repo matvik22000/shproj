@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"ru.sh.db"},{"l":"ru.sh.exceptions"},{"l":"ru.sh.main"}]

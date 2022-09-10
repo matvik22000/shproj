@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="main.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    <title>room manager</title>
+
+</head>
+<body>
+<div id="menu">
+    <div>
+        <div id="header">
+        </div>
+    </div>
+    <div class="item">Главная</div>
+    <div class="item">Мои бронирования</div>
+    <div class="item">Забронировать</div>
+</div>
+<div id="conttab">
+    <div class="tablediv" id='tableid'>
+        <div class="container">
+            <div class="ggroup">
+                <div class="g" id="g1">По кабинетам</div>
+                <div class="g" id="g2">По учителям</div>
+                <div class="g" id="g3">По времени</div>
+            </div>
+            <div class="block" id="blockid"></div>
+        </div>
+        <div class="search_and_date">
+            <div class="search_container">
+                <input id="search_box" type="text" autocomplete="off" class="search_box"/>
+                <label for="search_box"><span class="glyphicon glyphicon-search search_icon"></span></label>
+            </div>
+            <div id="search_date1">
+                <input type="text" id="date1" maxlength="10">
+                <label id="calendar1" for="date"><span
+                        class="glyphicon glyphicon-calendar datepicker-here"></span></label>
+            </div>
+        </div>
+        <div class="whatfc">
+            <div id="tbl1" class="table"></div>
+            <div id="tbl2" class="table"></div>
+            <div id="tbl3" class="table"></div>
+        </div>
+    </div>
+</div>
+<div class="login" id="signin">
+    <div class="cont">
+        <div id="loggr">
+            <label for="log" class="label">логин</label><br>
+            <input type="text" id="log" name="username"></div>
+        <div id="passgr">
+            <label for="pass" class="label">пароль</label><br>
+            <input type="password" id="pass" name="password"></div>
+        <div id="buttongr">
+            <input type="button" id="button" onclick="login()" value="Войти">
+        </div>
+    </div>
+</div>
+
+<div id="myres">
+    <div class="tablediv">
+<!--        <div class="search_and_date">-->
+<!--            <div class="search_container">-->
+<!--                <input id="search_box1" type="text" autocomplete="off" class="search_box"/>-->
+<!--                <label for="search_box1"><span class="glyphicon glyphicon-search search_icon"></span></label>-->
+<!--            </div>-->
+<!--            <div id="search_date2">-->
+<!--                <input type="text" id="date2" maxlength="10">-->
+<!--                <label id="calendar2" for="date"><span-->
+<!--                        class="glyphicon glyphicon-calendar"></span></label>-->
+<!--            </div>-->
+<!--        </div>-->
+        <div class = "table" id="table4">
+        </div>
+    </div>
+</div>
+
+<div class="newres" id="make_new_res">
+    <div id="cont_days">
+        <div>
+            <label for="reason" class="labfor" style="margin-left: 50px">Назвние меропиятия:</label>
+            <input type="text" id="reason">
+        </div>
+        <div>
+            <label for="room_name" class="labfor">кабинет: </label>
+            <input type="text" id="room_name">
+            <input type="text" id="date" maxlength="10">
+            <label id="calendar" for="date"><span
+                    class="glyphicon glyphicon-calendar datepicker-here"></span></label>
+            <div class="ras">
+                <div id='cont_for_rooms_containers_type'>
+                    <div id="sort_by_name">
+                        По именам
+                    </div>
+                    <div id="sort_by_type">
+                        По атрибутам
+                    </div>
+                    <div id="block_for_sort"></div>
+                </div>
+                <div id="cont_for_rooms_names">
+                </div>
+                <div id="cont_for_rooms_types">
+                </div>
+            </div>
+            <div>
+                <div style="margin-bottom: 20px; margin-top: 20px">
+                    <label for="start_time" style="margin-left: 100px">Начало в </label>
+                    <input type="text" id="start_time" maxlength='5' class="timeinp">
+                    <label for="end_time">Окончание в</label>
+                    <input type="text" id="end_time" maxlength='5' class="timeinp">
+                </div>
+            </div>
+            <input type="button" id="button1" value="Забронировать">
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="sha256.js"></script>
+</html>

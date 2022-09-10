@@ -1,0 +1,1 @@
+web: java -Dlogging.level.ru.sh=DEBUG -jar target/java-getting-started-1.0.jar
